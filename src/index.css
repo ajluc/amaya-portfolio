@@ -1,7 +1,7 @@
 .uhh {
   border: 2px solid black;
 }
-
+/* Fonts */
 @font-face {
   font-family: "ExodusRegular";
   src: url('./fonts/ExodusPersonalUse/ExodusDemo-Regular.otf') format('truetype');
@@ -23,20 +23,40 @@
   src: url('./fonts/ExodusPersonalUse/ExodusDemo-Striped.otf') format('truetype');
 }
 
+
+/* General */
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   /* font-style: italic; */
   font-weight: 300;
+}
+
+a:link, a:visited, a:hover { text-decoration: none; }
+a {
+  color: rgb(252, 247, 241);
+}
+a:hover {
+  opacity: .8;
+}
+
+.light {
+  background-color: rgb(252, 247, 241);
+  color: rgb(33, 33, 33);
+}
+.dark {
   color: rgb(252, 247, 241);
   background-color: rgb(33, 33, 33);
 }
+html {
+  scroll-behavior: smooth;
+}
 
+/* Text */
 p {
   margin: 0px;
   text-align: justify;
 }
-
 .text-hero {
   font-family: 'ExodusSharpen';
   font-size: 7vw;
@@ -48,22 +68,85 @@ p {
 
 
 
+/* Alignment */
 .container {
-  margin: clamp(20px, 10%, 100px);
+  padding: clamp(20px, 10%, 100px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-width: 550px;
-  height: 65vh;
 }
-/* .right-align {
-  align-self: flex-end;
-} */
 .row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+.nav {
+  background-color: rgb(33, 33, 33);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  height: 100%;
+  top: 0;
+}
+.nav-item {
+  margin: 0px 10px;
+  /* transform:rotate(270deg); */
+}
+
+
+/* Animations */
+.fade {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0;
+    filter: blur(20px);
+  }
+  100% { opacity: 1;
+    filter: blur(0px) 
+  }
+}
+@-moz-keyframes fadeIn {
+  0% { opacity: 0;
+    filter: blur(20px);
+  }
+  100% { opacity: 1;
+    filter: blur(0px) 
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0;
+    filter: blur(20px);
+  }
+  100% { opacity: 1;
+    filter: blur(0px) 
+  }
+}
+@-o-keyframes fadeIn {
+  0% { opacity: 0;
+    filter: blur(20px);
+  }
+  100% { opacity: 1;
+    filter: blur(0px) 
+  }
+}
+@-ms-keyframes fadeIn {
+  0% { opacity: 0;
+    filter: blur(20px);
+  }
+  100% { opacity: 1;
+    filter: blur(0px) 
+  }
+}
+
+
 
 
 /* 
