@@ -1,7 +1,7 @@
 const Home = () => {
   return (
     <div className="dark" id="home">
-      <div className="container" style={{  height: '65vh'}}>
+      <div className="container" style={{  height: '75vh'}}>
         <p className="text-hero fade">amaya luca<span className="text-shino">s</span></p>
         <div>
           <p className="text-hero fade" style={{textAlign: 'right'}}>de<span className="text-shino">s</span>igne<span className="text-shino">r</span> &</p>
