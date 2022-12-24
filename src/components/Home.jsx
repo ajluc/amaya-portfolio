@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="dark" id="about">
+    <div className="dark" id="home">
       <div className="container" style={{  height: '65vh'}}>
         <p className="text-hero fade">amaya luca<span className="text-shino">s</span></p>
         <div>
