@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 import devDotToIcon from "../images/socials/devdotto.svg";
 import envelopeIcon from "../images/socials/envelope.svg";
@@ -10,85 +9,72 @@ import mediumIcon from "../images/socials/medium.svg";
 import twitterIcon from "../images/socials/twitter.svg";
 import youTubeIcon from "../images/socials/youtube.svg";
 
-const Footer = (props) => {
-  const {
-    devDotTo,
-    email,
-    gitHub,
-    instagram,
-    linkedIn,
-    medium,
-    name,
-    primaryColor,
-    twitter,
-    youTube,
-  } = props;
+const Footer = () => {
+  const info = {
+    name: "Amaya Lucas",
+    title: "Full Stack Web Developer",
+    email: "amayajlucas@gmail.com",
+    gitHub: "ajluc",
+    instagram: "",
+    linkedIn: "amaya-lucas",
+    medium: "",
+    twitter: "",
+    youTube: "",
+  };
 
   return (
-    <div
-      id="contact"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: "2.5rem",
-        padding: "5rem 0 3rem",
-        backgroundColor: primaryColor,
-      }}
-    >
-      <div
-        style={{
+    <div className="dark" id="contact">
+      <div style={{
+          padding: '10px',
           display: "flex",
           justifyContent: "center",
-          gap: "2.5rem",
-        }}
-      >
-        {email && (
-          <a href={`mailto:${email}`}>
+          gap: "2.5rem",}}>
+        {info.email && (
+          <a href={`mailto:${info.email}`}>
             <img src={envelopeIcon} alt="email" className="socialIcon" />
           </a>
         )}
-        {devDotTo && (
-          <a href={`https://dev.to/${devDotTo}`} target="_blank" rel="noopener noreferrer">
+        {info.devDotTo && (
+          <a href={`https://dev.to/${info.devDotTo}`} target="_blank" rel="noopener noreferrer">
             <img src={devDotToIcon} alt="Dev.to" className="socialIcon" />
           </a>
         )}
-        {gitHub && (
-          <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
+        {info.gitHub && (
+          <a href={`https://github.com/${info.gitHub}`} target="_blank" rel="noopener noreferrer">
             <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
           </a>
         )}
-        {instagram && (
+        {info.instagram && (
           <a
-            href={`https://www.instagram.com/${instagram}`}
+            href={`https://www.instagram.com/${info.instagram}`}
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={instagramIcon} alt="Instagram" className="socialIcon" />
           </a>
         )}
-        {linkedIn && (
+        {info.linkedIn && (
           <a
-            href={`https://www.linkedin.com/in/${linkedIn}`}
+            href={`https://www.linkedin.com/in/${info.linkedIn}`}
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
           </a>
         )}
-        {medium && (
-          <a href={`https://medium.com/@${medium}`} target="_blank" rel="noopener noreferrer">
+        {info.medium && (
+          <a href={`https://medium.com/@${info.medium}`} target="_blank" rel="noopener noreferrer">
             <img src={mediumIcon} alt="Medium" className="socialIcon" />
           </a>
         )}
-        {twitter && (
-          <a href={`https://twitter.com/${twitter}`} target="_blank" rel="noopener noreferrer">
+        {info.twitter && (
+          <a href={`https://twitter.com/${info.twitter}`} target="_blank" rel="noopener noreferrer">
             <img src={twitterIcon} alt="Twitter" className="socialIcon" />
           </a>
         )}
-        {youTube && (
+        {info.youTube && (
           <a
-            href={`https://www.youtube.com/c/${youTube}`}
+            href={`https://www.youtube.com/c/${info.youTube}`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -96,29 +82,8 @@ const Footer = (props) => {
           </a>
         )}
       </div>
-      <p className="small" style={{ marginTop: 0, color: "white" }}>
-        Created by {name}
-      </p>
     </div>
-  );
-};
+  )
+}
 
-Footer.defaultProps = {
-  name: "",
-};
-
-Footer.propTypes = {
-  devDotTo: PropTypes.string,
-  email: PropTypes.string,
-  gitHub: PropTypes.string,
-  instagram: PropTypes.string,
-  linkedIn: PropTypes.string,
-  medium: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  primaryColor: PropTypes.string,
-  twitter: PropTypes.string,
-  youTube: PropTypes.string,
-
-};
-
-export default Footer;
+export default Footer
