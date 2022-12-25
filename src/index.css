@@ -118,6 +118,12 @@ img.socialIcon {
   width: 20px;
   height: 20px;
 }
+img.thumbnail {
+  width: 7vw;
+  height: 7vw;
+  object-fit: cover;
+  filter: grayscale(1);
+}
 
 /* Animations */
 .fade {
