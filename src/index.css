@@ -56,7 +56,6 @@ html {
 /* Text */
 p {
   margin: 0px;
-  text-align: justify;
 }
 .text-hero {
   font-family: 'ExodusSharpen';
@@ -76,8 +75,9 @@ p {
   font-size: 10px;
   text-align: center;
   text-transform: uppercase;
-
   /* mix-blend-mode: difference; */
+  writing-mode: vertical-rl;
+  transform:rotate(180deg);
 }
 
 
@@ -101,6 +101,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 200;
 
   width: 40px;
   height: 100%;
@@ -108,10 +109,13 @@ p {
   padding-top: clamp(20px, 5%, 75px);
 }
 .nav-item {
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0px 10px 20px;
   width: 100%;
-  transform:rotate(270deg);
+  /* transform:rotate(270deg); */
   align-self: center;
+}
+.nav-item:hover {
+  transform: skewY(-30deg);
 }
 img.socialIcon {
   width: 20px;
@@ -137,9 +141,28 @@ img.thumbnail {
 }
 .project:hover {
   filter: grayscale(0);
+  opacity: .8;
+}
+.project-details {
+  position: fixed;
+  height: 100vh;
+  z-index: 100;
+}
+
+.link:hover{
+  transform: skewX(30deg);
+  opacity: .8;
 }
 
 /* Animations */
+
+.collapse {
+  animation: collapseIn 1s;
+}
+@keyframes collapseIn {
+  0% {width: 0px;}
+  100% {width: 100px;}
+}
 .fade {
   animation: fadeIn 1s;
   -webkit-animation: fadeIn 1s;
@@ -147,7 +170,6 @@ img.thumbnail {
   -o-animation: fadeIn 1s;
   -ms-animation: fadeIn 1s;
 }
-
 @keyframes fadeIn {
   0% { opacity: 0;
     filter: blur(20px);
