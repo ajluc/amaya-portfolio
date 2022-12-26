@@ -10,6 +10,7 @@ const personalProjectList = [
     title: <p className="text-hero link"  style={{textAlign: 'right'}}><span className="text-shino">p</span>o<span className="text-shino">r</span>tfolio</p>,
     description:
       "This project recreates the classic web game called Snake using Vanilla Javascript. It uses JS classes and inheritance.",
+    skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
     url: "",
     github: "https://github.com/ajluc/_s_n_a_k_e_",
     image: portfolio
@@ -22,6 +23,7 @@ const GAProjectList = [
     title: <p className="text-hero link"  style={{textAlign: 'right'}}><span className="text-shino">s</span>na<span className="text-shino">k</span>e</p>,
     description:
       "This project recreates the classic web game called Snake using Vanilla Javascript. It uses JS classes and inheritance.",
+    skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
     url: "https://_s_n_a_k_e_.surge.sh/",
     github: "https://github.com/ajluc/_s_n_a_k_e_",
     image: snake
@@ -31,6 +33,7 @@ const GAProjectList = [
     title: <p className="text-hero link"  style={{textAlign: 'right'}}>facade<span className="text-shino">b</span>oo<span className="text-shino">k</span></p>,
     description:
       "An anonymous, open source architecture blog where contributors can give their unfiltered opinions of the built environment. Facadebook is an interactive social platform to open the dialogue to all fans (and haters) of architecture.",
+    skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
     url: "https://facadebook.herokuapp.com/",
     github: "https://github.com/ajluc/facadebook"
   },
@@ -39,6 +42,7 @@ const GAProjectList = [
     title: <p className="text-hero link"  style={{textAlign: 'right'}}><span className="text-shino">p</span>otluc<span className="text-shino">k</span>y</p>,
     description:
       "A platform for event planning and coordination. Guests can RSVP, indicate what they are bringing, and leave comments.",
+    skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
     url: "https://feelingpotlucky.herokuapp.com/",
     github: "https://github.com/ralicynf/potlucky-front-end"
 
@@ -48,6 +52,7 @@ const GAProjectList = [
     title: <p className="text-hero link"  style={{textAlign: 'right'}}>intdev</p>,
     description:
       "Take your education into your own hands. IntDev is a platform for academic institutions that allows students to keep track of their transcripts, join classes, and even update their own grades.",
+    skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
     url: "https://intdev.herokuapp.com/",
     github: "https://github.com/OliviaSchwartz/Transcript-Hackathon-Front"
 
@@ -72,15 +77,24 @@ const Projects = () => {
   
   return (
     <div className="dark" id="projects">
-      <div className="light project-details" id="project-details">
+      <div className="light fold-out" id="project-details">
         <div className="container">
-          <div style={{width: '30vw'}}>
+          <div style={{width: '70vw'}}>
           {open ? (
           <div>
             <a href={open.url} target="_blank" rel="noopener noreferrer">
             {open.title}
             </a>
-            <p>{open.description}</p>
+            
+            <div 
+            style={{maxWidth: '200px', marginRight: '40px'}}>
+            <p className="text-header-dark">Technology Used</p>
+            {open.skills?.map((skill) => (
+              <p className="text-body" key={skill}>{skill}</p>
+            ))}
+          </div>
+
+            <p className="text-body">{open.description}</p>
           </div>
           ) : <></>}
           </div>
@@ -92,9 +106,9 @@ const Projects = () => {
         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between',  marginTop: '50px'}}>
           <div 
             style={{maxWidth: '300px', marginRight: '40px'}}>
-            <p className="text-header">General Assembly</p>
-            <p style={{borderTop: '1px solid white', padding: '5px 0px'}}>Twelve-week intensive in Full-Stack Web Development. </p>
-            <p style={{padding: '2px 0px'}}>9/2022 - 12/2022</p>
+            <p className="text-header-light">General Assembly</p>
+            <p className="text-body">Twelve-week intensive in Full-Stack Web Development. </p>
+            <p className="text-body">9/2022 - 12/2022</p>
           </div>
 
           <div className="project-container">
@@ -110,9 +124,9 @@ const Projects = () => {
 }}>
           <div 
             style={{maxWidth: '300px', marginRight: '40px'}}>
-            <p className="text-header">Personal Projects</p>
-            <p style={{borderTop: '1px solid white', padding: '5px 0px'}}>Post-graduation and self-directed. More coming soon</p>
-            <p style={{padding: '2px 0px'}}>12/2022 - present</p>
+            <p className="text-header-light">Personal Projects</p>
+            <p className="text-body">Post-graduation and self-directed. More coming soon</p>
+            <p className="text-body">12/2022 - present</p>
           </div>
           <div className="project-container">
             {personalProjectList.map((project) => (

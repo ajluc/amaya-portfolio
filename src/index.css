@@ -65,10 +65,22 @@ p {
 .text-shino {
   font-family: 'ExodusShino';
 }
-.text-header {
+.text-header-dark {
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--dark)
+}
+.text-header-light {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--light)
+}
+.text-body {
+  padding: 2px 0px;
 }
 .nav-item-link {
   color: var(--light);
@@ -145,7 +157,7 @@ img.thumbnail {
   filter: grayscale(0);
   opacity: .8;
 }
-.project-details {
+.fold-out {
   position: fixed;
   top: 0%;
   left: 100%;
