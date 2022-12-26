@@ -145,8 +145,15 @@ img.thumbnail {
 }
 .project-details {
   position: fixed;
+  top: 0%;
+  left: 100%;
+  transform: translate(-100%, 0%);
+
+  width: 0vw;
   height: 100vh;
-  z-index: 100;
+  background: var(--light);
+  color: var(--dark);
+  z-index: 10;
 }
 
 .link:hover{
@@ -155,13 +162,13 @@ img.thumbnail {
 }
 
 /* Animations */
-
-.collapse {
+.open {
   animation: collapseIn 1s;
+  width: 100vw;
 }
 @keyframes collapseIn {
   0% {width: 0px;}
-  100% {width: 100px;}
+  100% {width: 100%;}
 }
 .fade {
   animation: fadeIn 1s;
