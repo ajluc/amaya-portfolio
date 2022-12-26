@@ -163,7 +163,7 @@ img.thumbnail {
   bottom: 0;
   left: 100%;
   transform: translate(-100%, 0%);
-  overflow: scroll;
+  overflow: auto;
 
   width: 0%;
   height: 100%;

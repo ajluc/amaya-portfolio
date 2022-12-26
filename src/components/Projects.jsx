@@ -86,6 +86,7 @@ const Projects = () => {
             <div style={{width: 'fit-content'}}>
               <a href={open.url} target="_blank" rel="noopener noreferrer">
               {open.title}
+
               </a>
             </div>
             <p onClick={() => detailsClose()}>x</p>
