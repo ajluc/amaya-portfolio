@@ -79,7 +79,9 @@ p {
   writing-mode: vertical-rl;
   transform:rotate(180deg);
 }
-
+a {
+  color: var(--dark);
+}
 
 /* Alignment */
 .container {
@@ -169,6 +171,14 @@ img.thumbnail {
 @keyframes collapseIn {
   0% {width: 0px;}
   100% {width: 100%;}
+}
+.closed {
+  animation: collapseOut 1s;
+  width: 0px;
+}
+@keyframes collapseOut {
+  0% {width: 100%;}
+  100% {width: 0px;}
 }
 .fade {
   animation: fadeIn 1s;

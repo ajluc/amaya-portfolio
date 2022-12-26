@@ -2,6 +2,7 @@ import { useState } from "react"
 
 import snake from "../images/thumbnails/snake.png"
 import portfolio from "../images/thumbnails/portfolio.png"
+import ProjectCard from "./ProjectCard"
 
 const personalProjectList = [
   {
@@ -9,7 +10,7 @@ const personalProjectList = [
     title: <p className="text-hero link"  style={{textAlign: 'right'}}><span className="text-shino">p</span>o<span className="text-shino">r</span>tfolio</p>,
     description:
       "This project recreates the classic web game called Snake using Vanilla Javascript. It uses JS classes and inheritance.",
-    url: "https://_s_n_a_k_e_.surge.sh/",
+    url: "",
     github: "https://github.com/ajluc/_s_n_a_k_e_",
     image: portfolio
   }
@@ -55,12 +56,14 @@ const GAProjectList = [
 
 const detailsOpen = () => {
   let element = document.getElementById('project-details')
+  if (element.classList.contains('closed')) { element.classList.remove('closed')}
   element.classList.add('open')
 }
 
 const detailsClose = () => {
   let element = document.getElementById('project-details')
   element.classList.remove('open')
+  element.classList.add('closed')
 }
 
 
@@ -74,7 +77,9 @@ const Projects = () => {
           <div style={{width: '30vw'}}>
           {open ? (
           <div>
+            <a href={open.url} target="_blank" rel="noopener noreferrer">
             {open.title}
+            </a>
             <p>{open.description}</p>
           </div>
           ) : <></>}
@@ -94,13 +99,7 @@ const Projects = () => {
 
           <div className="project-container">
             {GAProjectList.map((project) => (
-              <div className="project" key={project.name} style={{display: 'flex', flexDirection: 'row'}} onClick={()=>{
-                console.log(project.name)
-                setOpen(project)
-                detailsOpen()}}>
-                {project.title}
-                <img src={project.image} className="thumbnail" style= {{objectPosition: '50% 50%', alignSelf: 'flex-end', marginBottom: '.5vw'}}/>
-              </div>
+              <ProjectCard project={project} setOpen={setOpen} detailsOpen={detailsOpen}/>
             ))}
           </div>
         </div>
@@ -117,10 +116,7 @@ const Projects = () => {
           </div>
           <div className="project-container">
             {personalProjectList.map((project) => (
-              <div className="project" key={project.name} style={{display: 'flex', flexDirection: 'row'}}>
-                {project.title}
-                <img src={project.image} className="thumbnail" style={{  objectPosition: '50% 50%', alignSelf: 'flex-end', marginBottom: '.5vw'}}/>
-              </div>
+              <ProjectCard project={project} setOpen={setOpen} detailsOpen={detailsOpen}/>
             ))}
           </div>
         </div>
