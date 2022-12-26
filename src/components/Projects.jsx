@@ -63,12 +63,14 @@ const detailsOpen = () => {
   let element = document.getElementById('project-details')
   if (element.classList.contains('closed')) { element.classList.remove('closed')}
   element.classList.add('open')
+  document.body.style.overflow = 'hidden'
 }
 
 const detailsClose = () => {
   let element = document.getElementById('project-details')
   element.classList.remove('open')
   element.classList.add('closed')
+  document.body.style.overflow = 'auto'
 }
 
 
@@ -78,7 +80,7 @@ const Projects = () => {
   return (
     <div className="dark" id="projects">
       <div className="light fold-out" id="project-details">
-        <div className="container">
+        <div className="container" style={{height: '100%'}}>
           {open ? (
           <div>
             <div style={{width: 'fit-content'}}>
