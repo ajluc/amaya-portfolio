@@ -44,28 +44,28 @@ const GAProjectList = [
     github: "https://github.com/ajluc/facadebook",
     thumbnail: facadebook
   },
-  {
-    name: 'potlucky',
-    title: <p className="text-hero link"><span className="text-shino">p</span>otluc<span className="text-shino">k</span>y</p>,
-    description:
-      "A platform for event planning and coordination. Guests can RSVP, indicate what they are bringing, and leave comments.",
-    skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
-    url: "https://feelingpotlucky.herokuapp.com/",
-    github: "https://github.com/ralicynf/potlucky-front-end",
-    thumbnail: potlucky
+  // {
+  //   name: 'potlucky',
+  //   title: <p className="text-hero link"><span className="text-shino">p</span>otluc<span className="text-shino">k</span>y</p>,
+  //   description:
+  //     "A platform for event planning and coordination. Guests can RSVP, indicate what they are bringing, and leave comments.",
+  //   skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
+  //   url: "https://feelingpotlucky.herokuapp.com/",
+  //   github: "https://github.com/ralicynf/potlucky-front-end",
+  //   thumbnail: potlucky
 
-  },
-  {
-    name: 'intdev',
-    title: <p className="text-hero link">intdev</p>,
-    description:
-      "Take your education into your own hands. IntDev is a platform for academic institutions that allows students to keep track of their transcripts, join classes, and even update their own grades.",
-    skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
-    url: "https://intdev.herokuapp.com/",
-    github: "https://github.com/OliviaSchwartz/Transcript-Hackathon-Front",
-    thumbnail: intdev
+  // },
+  // {
+  //   name: 'intdev',
+  //   title: <p className="text-hero link">intdev</p>,
+  //   description:
+  //     "Take your education into your own hands. IntDev is a platform for academic institutions that allows students to keep track of their transcripts, join classes, and even update their own grades.",
+  //   skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
+  //   url: "https://intdev.herokuapp.com/",
+  //   github: "https://github.com/OliviaSchwartz/Transcript-Hackathon-Front",
+  //   thumbnail: intdev
 
-  },
+  // },
 ]
 
 const detailsOpen = () => {
