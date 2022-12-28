@@ -4,7 +4,7 @@ const ProjectCard = ({project, setOpen, detailsOpen}) => {
       setOpen(project)
       detailsOpen()}}>
       {project.title}
-      <img src={project.image} className="thumbnail" style= {{objectPosition: '50% 50%', alignSelf: 'flex-end', marginBottom: '.5vw'}}/>
+      <img src={project.thumbnail} className="thumbnail" style= {{objectPosition: '50% 50%', alignSelf: 'flex-end', marginBottom: '.5vw'}}/>
     </div>
   )
 }

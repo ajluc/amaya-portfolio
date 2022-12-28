@@ -1,8 +1,12 @@
 import { useState } from "react"
+import ProjectCard from "./ProjectCard"
 
 import snake from "../images/thumbnails/snake.png"
 import portfolio from "../images/thumbnails/portfolio.png"
-import ProjectCard from "./ProjectCard"
+import facadebook from "../images/thumbnails/facadebook.png"
+import potlucky from "../images/thumbnails/potlucky.png"
+import intdev from "../images/thumbnails/intdev.png"
+import Images from "./ImageSlides"
 
 const personalProjectList = [
   {
@@ -13,7 +17,8 @@ const personalProjectList = [
     skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
     url: "",
     github: "https://github.com/ajluc/_s_n_a_k_e_",
-    image: portfolio
+    thumbnail: portfolio,
+    images: [portfolio, portfolio, potlucky]
   }
 ]
 
@@ -26,7 +31,8 @@ const GAProjectList = [
     skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
     url: "https://_s_n_a_k_e_.surge.sh/",
     github: "https://github.com/ajluc/_s_n_a_k_e_",
-    image: snake
+    thumbnail: snake,
+    images: [snake, snake, facadebook]
   },
   {
     name: 'facadebook',
@@ -35,7 +41,8 @@ const GAProjectList = [
       "An anonymous, open source architecture blog where contributors can give their unfiltered opinions of the built environment. Facadebook is an interactive social platform to open the dialogue to all fans (and haters) of architecture.",
     skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
     url: "https://facadebook.herokuapp.com/",
-    github: "https://github.com/ajluc/facadebook"
+    github: "https://github.com/ajluc/facadebook",
+    thumbnail: facadebook
   },
   {
     name: 'potlucky',
@@ -44,7 +51,8 @@ const GAProjectList = [
       "A platform for event planning and coordination. Guests can RSVP, indicate what they are bringing, and leave comments.",
     skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
     url: "https://feelingpotlucky.herokuapp.com/",
-    github: "https://github.com/ralicynf/potlucky-front-end"
+    github: "https://github.com/ralicynf/potlucky-front-end",
+    thumbnail: potlucky
 
   },
   {
@@ -54,7 +62,8 @@ const GAProjectList = [
       "Take your education into your own hands. IntDev is a platform for academic institutions that allows students to keep track of their transcripts, join classes, and even update their own grades.",
     skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
     url: "https://intdev.herokuapp.com/",
-    github: "https://github.com/OliviaSchwartz/Transcript-Hackathon-Front"
+    github: "https://github.com/OliviaSchwartz/Transcript-Hackathon-Front",
+    thumbnail: intdev
 
   },
 ]
@@ -80,18 +89,18 @@ const Projects = () => {
   return (
     <div className="dark" id="projects">
       <div className="light fold-out" id="project-details">
-        <div className="container" style={{height: '100%'}}>
+        <div className="container">
           {open ? (
           <div>
-            <div style={{width: 'fit-content'}}>
+            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
               <a href={open.url} target="_blank" rel="noopener noreferrer">
               {open.title}
-
               </a>
+              <p className="link" style={{fontSize: '25px', transform: 'none'}} onClick={() => detailsClose()}>x</p>
             </div>
-            <p onClick={() => detailsClose()}>x</p>
+            <Images images={open.images}/>
             <div 
-            style={{display: 'flex', flexDirection: 'row'}}>
+            style={{display: 'flex', flexDirection: 'row', justifyContent: "center"}}>
               <div style={{width: '200px', marginRight: '40px'}}>
                 <div>
                   <p className="text-header-dark">Technology Used</p>
