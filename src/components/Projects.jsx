@@ -1,12 +1,12 @@
 import { useState } from "react"
 import ProjectCard from "./ProjectCard"
+import FoldOut from "./FoldOut"
 
 import snake from "../images/thumbnails/snake.png"
 import portfolio from "../images/thumbnails/portfolio.png"
 import facadebook from "../images/thumbnails/facadebook.png"
 import potlucky from "../images/thumbnails/potlucky.png"
 import intdev from "../images/thumbnails/intdev.png"
-import Images from "./ImageSlides"
 
 const personalProjectList = [
   {
@@ -88,40 +88,7 @@ const Projects = () => {
   
   return (
     <div className="dark" id="projects">
-      <div className="light fold-out" id="project-details">
-        <div className="container">
-          {open ? (
-          <div>
-            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
-              <a href={open.url} target="_blank" rel="noopener noreferrer">
-              {open.title}
-              </a>
-              <p className="link" style={{fontSize: '25px', transform: 'none'}} onClick={() => detailsClose()}>x</p>
-            </div>
-            <Images images={open.images}/>
-            <div 
-            style={{display: 'flex', flexDirection: 'row', justifyContent: "center"}}>
-              <div style={{width: '200px', marginRight: '40px'}}>
-                <div>
-                  <p className="text-header-dark">Technology Used</p>
-                  {open.skills?.map((skill) => (
-                    <p className="text-body" key={skill}>{skill}</p>
-                  ))}
-                </div>
-                <div>
-                <a href={open.github} target="_blank">github</a>
-                <a href={open.url} target="_blank">launch app</a>
-                </div>
-              </div>
-              <div style={{width: '500px'}}>
-                <p className="text-header-dark">Description</p>
-                <p className="text-body">{open.description}</p>
-              </div>
-            </div>
-          </div>
-          ) : <></>}
-        </div>
-      </div>
+      <FoldOut open={open} detailsClose={detailsClose}/>
       <div className="container">
         <p className="text-hero fade"><span className="text-shino">pr</span>oject<span className="text-shino">s</span></p>
         <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between',  marginTop: '50px'}}>
@@ -131,18 +98,13 @@ const Projects = () => {
             <p className="text-body">Twelve-week intensive in Full-Stack Web Development. </p>
             <p className="text-body">9/2022 - 12/2022</p>
           </div>
-
           <div className="project-container">
             {GAProjectList.map((project) => (
               <ProjectCard project={project} setOpen={setOpen} detailsOpen={detailsOpen}/>
             ))}
           </div>
         </div>
-
-
-
-        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between',  marginTop: '70px'
-}}>
+        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between',  marginTop: '70px'}}>
           <div 
             style={{width: '200px', marginRight: '40px'}}>
             <p className="text-header-light">Personal Projects</p>
