@@ -12,24 +12,26 @@ const FoldOut = ({open, detailsClose}) => {
               </a>
               <p className="link" style={{fontSize: '25px', transform: 'none'}} onClick={() => detailsClose()}>x</p>
             </div>
-            <Images images={open.images}/>
-            <div 
-            style={{display: 'flex', flexDirection: 'row', justifyContent: "center"}}>
-              <div style={{width: '200px', marginRight: '40px'}}>
-                <div>
-                  <p className="text-header-dark">Technology Used</p>
-                  {open.skills?.map((skill) => (
-                    <p className="text-body" key={skill}>{skill}</p>
-                  ))}
+            <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
+              <Images images={open.images}/>
+              <div 
+              style={{display: 'flex', flexDirection: 'row', justifyContent: "center"}}>
+                <div style={{width: '200px', marginRight: '40px'}}>
+                  <div>
+                    <p className="text-header-dark">Technology Used</p>
+                    {open.skills?.map((skill) => (
+                      <p className="text-body" key={skill}>{skill}</p>
+                    ))}
+                  </div>
+                  <div>
+                  <a href={open.github} target="_blank">github</a>
+                  <a href={open.url} target="_blank">launch app</a>
+                  </div>
                 </div>
-                <div>
-                <a href={open.github} target="_blank">github</a>
-                <a href={open.url} target="_blank">launch app</a>
+                <div style={{width: '500px'}}>
+                  <p className="text-header-dark">Description</p>
+                  <p className="text-body">{open.description}</p>
                 </div>
-              </div>
-              <div style={{width: '500px'}}>
-                <p className="text-header-dark">Description</p>
-                <p className="text-body">{open.description}</p>
               </div>
             </div>
           </div>

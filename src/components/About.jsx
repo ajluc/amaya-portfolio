@@ -16,12 +16,11 @@ const About = () => {
             <p>With my unique blend of skills and experience, I have the potential to make a significant impact in the field of software development. I have no doubt that I will thrive and make a valuable contribution to any team.</p>
           </div>
           <div>
-            <img src={bioPic} className="thumbnail" style={{height: '15vw', width: '15vw', borderRadius: "50%"}}/>
+            <img src={bioPic} className="thumbnail" style={{height: '15vw', width: '15vw', borderRadius: "50%", filter: "grayscale(1) contrast(1.15)"}}/>
             <div style={{width: '200px', marginRight: '40px'}}>
-                <div>
-                  <p className="text-header-dark">Skills</p>
-                    <p className="text-body">skill</p>
-                </div></div>
+              <p className="text-header-dark">Skills</p>
+                <p className="text-body">skill</p>
+            </div>
           </div>
         </div>
       </div>
