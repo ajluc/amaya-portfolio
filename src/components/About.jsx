@@ -5,8 +5,8 @@ const About = () => {
     <div className="light" id="about">
       <div className="container">
         <p className="text-hero fade">a<span className="text-shino">b</span>out</p>
-        <div style={{display: "flex", flexDirection: "row",  justifyContent: "center"}}>
-          <div style={{width: '500px', marginRight: '40px'}}>
+        <div className="row reverse">
+          <div style={{maxWidth: '500px', marginRight: '40px'}}>
             <p>As a full-stack engineer with a background in architecture, math, and physics, I bring a unique and valuable skill set to the table. My understanding of complex systems and my ability to think critically and creatively make me well-suited to tackle the challenges of modern software development.</p>
             <br/>
             <p>My background in architecture has given me an eye for design and a strong foundation in problem-solving, both of which help me to build and maintain web applications. My math and physics training have honed my analytical skills and my ability to understand and manipulate complex data, making me a valuable asset when it comes to developing algorithms and data-driven solutions.</p>
@@ -16,7 +16,7 @@ const About = () => {
             <p>With my unique blend of skills and experience, I have the potential to make a significant impact in the field of software development. I have no doubt that I will thrive and make a valuable contribution to any team.</p>
           </div>
           <div>
-            <img src={bioPic} className="thumbnail" style={{height: '15vw', width: '15vw', borderRadius: "50%", filter: "grayscale(1) contrast(1.15)"}}/>
+            <img src={bioPic} className="bio-pic"/>
             <div style={{width: '200px', marginRight: '40px'}}>
               <p className="text-header-dark">Skills</p>
                 <p className="text-body">skill</p>

@@ -25,7 +25,7 @@
 
 :root {
 --light: rgb(252, 247, 241);
---dark: rgb(33, 33, 33)
+--dark: rgb(33, 33, 33);
 }
 
 /* General */
@@ -141,6 +141,13 @@ img.thumbnail {
   object-fit: cover;
   margin-left: 20px;
   filter: grayscale(1);
+}
+img.bio-pic {
+  object-fit: cover;
+  height: 15vw;
+  width: 15vw;
+  border-radius: 50%;
+  filter: grayscale(1) contrast(1.15);
 }
 .project-container{
   display: flex;
@@ -288,6 +295,10 @@ img.thumbnail {
 
 
 /* Slider */
+.slides-container {
+  width: 740px;
+  margin: 20px 0px;
+}
 .slider {
   width: 100%;
   max-width: 800px;
@@ -330,4 +341,27 @@ img.thumbnail {
 .next {
   top: 45%;
   right: 2%;
+}
+
+/* Mobile CSS */
+
+@media screen and (max-width: 700px) {
+  .container {
+    min-width: 50px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .reverse {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .bio-pic {
+    min-height: 150px;
+    min-width: 150px;
+    margin: 20px;
+  }
+  .slides-container {
+    width: 100%;
+  }
 }

@@ -91,7 +91,7 @@ const Projects = () => {
       <FoldOut open={open} detailsClose={detailsClose}/>
       <div className="container">
         <p className="text-hero fade"><span className="text-shino">pr</span>oject<span className="text-shino">s</span></p>
-        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between',  marginTop: '50px'}}>
+        <div className="row" style={{justifyContent: 'space-between',  marginTop: '50px'}}>
           <div 
             style={{width: '200px', marginRight: '40px'}}>
             <p className="text-header-light">General Assembly</p>
@@ -104,7 +104,7 @@ const Projects = () => {
             ))}
           </div>
         </div>
-        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between',  marginTop: '70px'}}>
+        <div className="row" style={{justifyContent: 'space-between',  marginTop: '50px'}}>
           <div 
             style={{width: '200px', marginRight: '40px'}}>
             <p className="text-header-light">Personal Projects</p>
