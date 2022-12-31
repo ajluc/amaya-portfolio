@@ -5,17 +5,20 @@ import Footer from './components/Footer'
 import Header from './components/Header';
 import Home from './components/Home';
 import Projects from './components/Projects';
-
+import MobileHeader from './components/mobileNav';
 
 const App = () => {
   return (
   <div>
     <Header />
-    <Home />
-    <About />
-    <Projects />
-    <Contact />
-    <Footer/>
+    {/* <MobileHeader /> */}
+    <main id='page'>
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer/>
+    </main>
   </div>)
 }
 

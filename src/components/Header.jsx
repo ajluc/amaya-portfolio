@@ -3,7 +3,7 @@ const Header = () => {
     let element = document.getElementById('project-details')
     if (element.classList.contains('open')) { element.classList.remove('open')}
     element.classList.add('closed')
-    document.body.style.overflow = 'auto'
+    document.getElementById('page').style.overflow = 'auto'
   }
 
   return (
@@ -21,7 +21,8 @@ const Header = () => {
       <div className="nav-item">
         <a href="#contact" className="nav-item-link" onClick={detailsClose}>Contact</a>
       </div>
-      <div className="nav-item" style={{marginTop: '40px'}}>
+      {/* <div></div> there used to be 40px margin top on resume */}
+      <div className="nav-item ext-nav-items">
         <a href="https://docs.google.com/document/d/19lOBGTkaKlRX_nObD-nhCIl4tEmVnHltzR3InHQjZC0/edit?usp=sharing" target='_blank' className="nav-item-link" onClick={detailsClose}>+Resume</a>
       </div>
       <div className="nav-item">
