@@ -13,12 +13,12 @@ const personalProjectList = [
     name: 'portfolio',
     title: <p className="text-hero link"><span className="text-shino">p</span>o<span className="text-shino">r</span>tfolio</p>,
     description:
-      "This project recreates the classic web game called Snake using Vanilla Javascript. It uses JS classes and inheritance.",
-    skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
-    url: "",
-    github: "https://github.com/ajluc/_s_n_a_k_e_",
+      "You are here! The project is my personal portfolio, and is currently under construction. A simple React App deployed on Heroku with a custom domain name.",
+    skills: 'Javascript, React.js, CSS, Styled Components',
+    url: "http://www.amaya.works",
+    github: "https://github.com/ajluc/amaya-portfolio",
     thumbnail: portfolio,
-    images: [portfolio, portfolio, potlucky]
+    images: []
   }
 ]
 
@@ -27,19 +27,19 @@ const GAProjectList = [
     name: 'snake',
     title: <p className="text-hero link"><span className="text-shino">s</span>na<span className="text-shino">k</span>e</p>,
     description:
-      "This project recreates the classic web game called Snake using Vanilla Javascript. It uses JS classes and inheritance.",
-    skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
+      "This project recreates the classic web game called Snake using Vanilla Javascript. It uses JS classes and inheritance for gameplay functionality. Completed in two days, shortly after first learning Javascript. Here, my biggest challenge was learning to incorporate motion over time, rather than solely through user interaction. Includes dark mode, speed options, and current/high score tracking.",
+    skills: 'Javascript, React.js, CSS3, HTML5',
     url: "https://_s_n_a_k_e_.surge.sh/",
     github: "https://github.com/ajluc/_s_n_a_k_e_",
     thumbnail: snake,
-    images: [snake, snake, facadebook]
+    images: [snake]
   },
   {
     name: 'facadebook',
     title: <p className="text-hero link">facade<span className="text-shino">b</span>oo<span className="text-shino">k</span></p>,
     description:
       "An anonymous, open source architecture blog where contributors can give their unfiltered opinions of the built environment. Facadebook is an interactive social platform to open the dialogue to all fans (and haters) of architecture.",
-    skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
+    skills: 'Javascript, MongoDB, Express, React.js, Node.js, CSS3, HTML5',
     url: "https://facadebook.herokuapp.com/",
     github: "https://github.com/ajluc/facadebook",
     thumbnail: facadebook
@@ -72,14 +72,14 @@ const detailsOpen = () => {
   let element = document.getElementById('project-details')
   if (element.classList.contains('closed')) { element.classList.remove('closed')}
   element.classList.add('open')
-  document.body.style.overflow = 'hidden'
+  document.getElementById('page').style.overflow = 'hidden'
 }
 
 const detailsClose = () => {
   let element = document.getElementById('project-details')
   element.classList.remove('open')
   element.classList.add('closed')
-  document.body.style.overflow = 'auto'
+  document.getElementById('page').style.overflow = 'auto'
 }
 
 

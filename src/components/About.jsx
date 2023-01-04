@@ -17,9 +17,21 @@ const About = () => {
           </div>
           <div>
             <img src={bioPic} className="bio-pic"/>
-            <div style={{width: '200px', marginRight: '40px'}}>
-              <p className="text-header-dark">Skills</p>
-                <p className="text-body">skill</p>
+            <div style={{width: '200px', margin: '40px'}}>
+              <p className="text-header-dark">Languages</p>
+                <p className="text-body">Javascript, HTML, CSS, Python</p>
+            </div>
+            <div style={{width: '200px', margin: '40px'}}>
+              <p className="text-header-dark">Frameworks</p>
+                <p className="text-body">React.js, Node.js, Express, Flask, Vue.js</p>
+            </div>
+            <div style={{width: '200px', margin: '40px'}}>
+              <p className="text-header-dark">Databases</p>
+                <p className="text-body">SQL, PostgreSQL, SQLAlchemy, MongoDB</p>
+            </div>
+            <div style={{width: '200px', margin: '40px'}}>
+              <p className="text-header-dark">Methods and Tools</p>
+                <p className="text-body">Mobile-First, Responsive Design, Wireframing, Entity Relationship Diagramming, Component Hierarchy Diagramming</p>
             </div>
           </div>
         </div>

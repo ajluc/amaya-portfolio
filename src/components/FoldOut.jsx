@@ -20,21 +20,19 @@ const FoldOut = ({open, detailsClose}) => {
               <div style={{width: '200px', marginRight: '40px'}}>
                 <div>
                   <p className="text-header-dark">Technology Used</p>
-                  {open.skills?.map((skill) => (
-                    <p className="text-body" key={skill}>{skill}</p>
-                  ))}
+                  <p className="text-body">{open.skills}</p>
                 </div>
+                <div>
+                <a href={open.github} target="_blank" rel="noopener noreferrer">
+                  <img src={gitHubIconDark} alt="GitHub" className="socialIcon" />
+                </a>
+                <a href={open.url} target="_blank" rel="noopener noreferrer">launch site</a>
+              </div>
               </div>
               <div style={{maxWidth: '500px'}}>
                 <p className="text-header-dark">Description</p>
                 <p className="text-body">{open.description}</p>
-                <div>
-                  {/* <a href={open.github} target="_blank">github</a> */}
-                  <a href={`https://github.com/${open.gitHub}`} target="_blank" rel="noopener noreferrer">
-                    <img src={gitHubIconDark} alt="GitHub" className="socialIcon" />
-                  </a>
-                  <a href={open.url} target="_blank" rel="noopener noreferrer">launch app</a>
-                </div>
+                
               </div>
             </div>
           </div>
