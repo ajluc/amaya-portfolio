@@ -1,43 +1,26 @@
-import Images from "./ImageSlides"
-import gitHubIconDark from "../images/socials/github-dark.svg";
+import gitHubIcon from "../images/socials/github.svg";
 
-const FoldOut = ({open, detailsClose}) => {
+const FoldOut = ({project}) => {
   return (
-    <div className="light fold-out" id="project-details">
-      {open ? (
-        <div className="container">
-          <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
-            <a href={open.url} target="_blank" rel="noopener noreferrer">
-            {open.title}
-            </a>
-            <p className="link" style={{fontSize: '25px', transform: 'none'}} onClick={() => detailsClose()}>x</p>
+    <div className="dark fold-down closed" id="project-details">
+      <div className="row" style={{justifyContent: "center"}}>
+        <div style={{width: '200px', marginRight: '40px'}}>
+          <div>
+            <p className="text-header-light">Technology Used</p>
+            <p className="text-body">{project.skills}</p>
           </div>
-          <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-            <div className="slides-container">
-              <Images images={open.images}/>
-            </div>
-            <div className="row" style={{justifyContent: "center"}}>
-              <div style={{width: '200px', marginRight: '40px'}}>
-                <div>
-                  <p className="text-header-dark">Technology Used</p>
-                  <p className="text-body">{open.skills}</p>
-                </div>
-                <div>
-                <a href={open.github} target="_blank" rel="noopener noreferrer">
-                  <img src={gitHubIconDark} alt="GitHub" className="socialIcon" />
-                </a>
-                <a href={open.url} target="_blank" rel="noopener noreferrer">launch site</a>
-              </div>
-              </div>
-              <div style={{maxWidth: '500px'}}>
-                <p className="text-header-dark">Description</p>
-                <p className="text-body">{open.description}</p>
-                
-              </div>
-            </div>
+          <div>
+            <a href={project.github} target="_blank" rel="noopener noreferrer">
+              <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
+            </a>
+            <a href={project.url} target="_blank" rel="noopener noreferrer" className="launch">launch</a>
           </div>
         </div>
-      ) : <></>}
+        <div style={{maxWidth: '500px'}}>
+          <p className="text-header-light">Description</p>
+          <p className="text-body">{project.description}</p>
+        </div>
+      </div>
     </div>
   )
 }

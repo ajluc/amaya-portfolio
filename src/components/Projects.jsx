@@ -1,4 +1,3 @@
-import { useState } from "react"
 import ProjectCard from "./ProjectCard"
 import FoldOut from "./FoldOut"
 
@@ -68,27 +67,15 @@ const GAProjectList = [
   // },
 ]
 
-const detailsOpen = () => {
-  let element = document.getElementById('project-details')
-  if (element.classList.contains('closed')) { element.classList.remove('closed')}
-  element.classList.add('open')
-  document.getElementById('page').style.overflow = 'hidden'
-}
-
-const detailsClose = () => {
-  let element = document.getElementById('project-details')
-  element.classList.remove('open')
-  element.classList.add('closed')
-  document.getElementById('page').style.overflow = 'auto'
-}
-
 
 const Projects = () => {
-  const [open, setOpen] = useState(null)
-  
+  const handleClick = (e) => {
+    e.currentTarget.children[1].classList.toggle('open')
+    e.currentTarget.children[1].classList.toggle('closed')
+  }
+
   return (
     <div className="dark" id="projects">
-      <FoldOut open={open} detailsClose={detailsClose}/>
       <div className="container">
         <p className="text-hero fade"><span className="text-shino">pr</span>oject<span className="text-shino">s</span></p>
         <div className="row" style={{justifyContent: 'space-between',  marginTop: '50px'}}>
@@ -98,9 +85,12 @@ const Projects = () => {
             <p className="text-body">Twelve-week intensive in Full-Stack Web Development. </p>
             <p className="text-body">9/2022 - 12/2022</p>
           </div>
-          <div className="project-container">
+          <div>
             {GAProjectList.map((project) => (
-              <ProjectCard project={project} setOpen={setOpen} detailsOpen={detailsOpen}/>
+              <div className="project-container" onClick={handleClick}>
+                <ProjectCard project={project}/>
+                <FoldOut project={project}/>
+              </div>
             ))}
           </div>
         </div>
@@ -111,9 +101,12 @@ const Projects = () => {
             <p className="text-body">Post-graduation and self-directed. More coming soon.</p>
             <p className="text-body">12/2022 - present</p>
           </div>
-          <div className="project-container">
+          <div>
             {personalProjectList.map((project) => (
-              <ProjectCard project={project} setOpen={setOpen} detailsOpen={detailsOpen}/>
+              <div className="project-container" onClick={handleClick}>
+                <ProjectCard project={project}/>
+                <FoldOut project={project}/>
+              </div>
             ))}
           </div>
         </div>
