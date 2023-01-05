@@ -99,13 +99,21 @@ a {
 }
 
 /* Alignment */
-.container {
-  padding: clamp(20px, 10%, 100px);
-  margin-left: 40px;
+.dark, .light {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  /* padding: clamp(20px, 10%, 100px); */
+  padding: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-width: 550px;
+  max-width: 900px;
 }
 .row {
   display: flex;

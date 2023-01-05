@@ -10,7 +10,7 @@ const Home = () => {
             <p className="text-body">I am an architect-turned-software engineer in NYC. I love clean, user-driven design and efficient code.</p>
           </div>
           </div>
-        <div>
+        <div style={{width: '100%', marginTop: '10vh'}}>
           <p className="text-hero fade" style={{textAlign: 'right'}}>de<span className="text-shino">s</span>igne<span className="text-shino">r</span> &</p>
         <div className="row reverse">
           {/* <div style={
