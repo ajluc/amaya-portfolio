@@ -35,12 +35,10 @@ body {
   font-weight: 300;
   font-size: 14px;
 }
-
 a:link, a:visited, a:hover { text-decoration: none; }
 a:hover {
   opacity: .8;
 }
-
 .light {
   background-color: var(--light);
   color: var(--dark);
@@ -51,6 +49,11 @@ a:hover {
 }
 html {
   scroll-behavior: smooth;
+}
+.launch {
+  background-color: var(--light);
+  border-radius: 25px;
+  padding: 2px 5px;
 }
 
 /* Text */
@@ -166,83 +169,24 @@ img.bio-pic {
 .project:hover > .link {
   transform: skewX(30deg);
 }
-.fold-out {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 100%;
-  transform: translate(-100%, 0%);
-  overflow: auto;
-
-  width: 0%;
-  height: 100%;
-  background: var(--light);
-  color: var(--dark);
-  z-index: 10;
-}
-
 .link:hover{
   opacity: .8;
   transform: skewX(30deg);
   cursor: pointer;
 }
 
+
 /* Animations */
+.fold-down {
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
 .open {
-  animation: collapseIn 1s;
-  -webkit-animation: collapseIn 1s;
-  -moz-animation: collapseIn 1s;
-  -o-animation: collapseIn 1s;
-  -ms-animation: collapseIn 1s;
-  width: 100vw;
-}
-@keyframes collapseIn {
-  0% {width: 0px;}
-  100% {width: 100%;}
-}
-@-moz-keyframes collapseIn {
-  0% {width: 0px;}
-  100% {width: 100%;}
-}
-@-webkit-keyframes collapseIn {
-  0% {width: 0px;}
-  100% {width: 100%;}
-}
-@-o-keyframes collapseIn {
-  0% {width: 0px;}
-  100% {width: 100%;}
-}
-@-ms-keyframes collapseIn {
-  0% {width: 0px;}
-  100% {width: 100%;}
+  max-height: 900px;
 }
 .closed {
-  animation: collapseOut 1s;
-  -webkit-animation: collapseOut 1s;
-  -moz-animation: collapseOut 1s;
-  -o-animation: collapseOut 1s;
-  -ms-animation: collapseOut 1s;
-  width: 0px;
-}
-@keyframes collapseOut {
-  0% {width: 100%;}
-  100% {width: 0px;}
-}
-@-moz-keyframes collapseOut {
-  0% {width: 100%;}
-  100% {width: 0px;}
-}
-@-webkit-keyframes collapseOut {
-  0% {width: 100%;}
-  100% {width: 0px;}
-}
-@-o-keyframes collapseOut {
-  0% {width: 100%;}
-  100% {width: 0px;}
-}
-@-ms-keyframes collapseOut {
-  0% {width: 100%;}
-  100% {width: 0px;}
+  max-height: 0;
 }
 .fade {
   animation: fadeIn 1s;
