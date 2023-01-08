@@ -78,9 +78,8 @@ const Projects = () => {
     <div className="dark" id="projects">
       <div className="container">
         <p className="text-hero fade"><span className="text-shino">pr</span>oject<span className="text-shino">s</span></p>
-        <div className="row" style={{justifyContent: 'space-between',  marginTop: '50px'}}>
-          <div 
-            style={{width: '200px', marginRight: '40px'}}>
+        <div 
+            style={{width: '200px', alignSelf: "flex-start", margin: "40px 0px 20px"}}>
             <p className="text-header-light">General Assembly</p>
             <p className="text-body">Twelve-week intensive in Full-Stack Web Development. </p>
             <p className="text-body">9/2022 - 12/2022</p>
@@ -93,10 +92,8 @@ const Projects = () => {
               </div>
             ))}
           </div>
-        </div>
-        <div className="row" style={{justifyContent: 'space-between',  marginTop: '50px'}}>
           <div 
-            style={{width: '200px', marginRight: '40px'}}>
+            style={{width: '200px', alignSelf: "flex-start", margin: "60px 0px 20px"}}>
             <p className="text-header-light">Personal Projects</p>
             <p className="text-body">Post-graduation and self-directed. More coming soon.</p>
             <p className="text-body">12/2022 - present</p>
@@ -111,7 +108,6 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </div>
   )
 }
 

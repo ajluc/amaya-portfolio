@@ -53,7 +53,13 @@ html {
 .launch {
   background-color: var(--light);
   border-radius: 25px;
-  padding: 2px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 5px;
+  font-weight: 500;
+
 }
 
 /* Text */
@@ -148,8 +154,8 @@ a {
   transform: skewY(-30deg);
 }
 img.socialIcon {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 img.thumbnail {
   width: 12vw;
