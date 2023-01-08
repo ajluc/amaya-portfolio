@@ -10,7 +10,7 @@ import intdev from "../images/thumbnails/intdev.png"
 const personalProjectList = [
   {
     name: 'portfolio',
-    title: <p className="text-hero link"><span className="text-shino">p</span>o<span className="text-shino">r</span>tfolio</p>,
+    title: <p className="text-hero subheader link"><span className="text-shino">p</span>o<span className="text-shino">r</span>tfolio</p>,
     description:
       "You are here! The project is my personal portfolio, and is currently under construction. A simple React App deployed on Heroku with a custom domain name.",
     skills: 'Javascript, React.js, CSS, Styled Components',
@@ -24,7 +24,7 @@ const personalProjectList = [
 const GAProjectList = [
   {
     name: 'snake',
-    title: <p className="text-hero link"><span className="text-shino">s</span>na<span className="text-shino">k</span>e</p>,
+    title: <p className="text-hero subheader link"><span className="text-shino">s</span>na<span className="text-shino">k</span>e</p>,
     description:
       "This project recreates the classic web game called Snake using Vanilla Javascript. It uses JS classes and inheritance for gameplay functionality. Completed in two days, shortly after first learning Javascript. Here, my biggest challenge was learning to incorporate motion over time, rather than solely through user interaction. Includes dark mode, speed options, and current/high score tracking.",
     skills: 'Javascript, React.js, CSS3, HTML5',
@@ -35,7 +35,7 @@ const GAProjectList = [
   },
   {
     name: 'facadebook',
-    title: <p className="text-hero link">facade<span className="text-shino">b</span>oo<span className="text-shino">k</span></p>,
+    title: <p className="text-hero subheader link">facade<span className="text-shino">b</span>oo<span className="text-shino">k</span></p>,
     description:
       "An anonymous, open source architecture blog where contributors can give their unfiltered opinions of the built environment. Facadebook is an interactive social platform to open the dialogue to all fans (and haters) of architecture.",
     skills: 'Javascript, MongoDB, Express, React.js, Node.js, CSS3, HTML5',
@@ -78,9 +78,8 @@ const Projects = () => {
     <div className="dark" id="projects">
       <div className="container">
         <p className="text-hero fade"><span className="text-shino">pr</span>oject<span className="text-shino">s</span></p>
-        <div className="row" style={{justifyContent: 'space-between',  marginTop: '50px'}}>
-          <div 
-            style={{width: '200px', marginRight: '40px'}}>
+        <div 
+            style={{width: '200px', alignSelf: "flex-start", margin: "40px 0px 20px"}}>
             <p className="text-header-light">General Assembly</p>
             <p className="text-body">Twelve-week intensive in Full-Stack Web Development. </p>
             <p className="text-body">9/2022 - 12/2022</p>
@@ -93,10 +92,8 @@ const Projects = () => {
               </div>
             ))}
           </div>
-        </div>
-        <div className="row" style={{justifyContent: 'space-between',  marginTop: '50px'}}>
           <div 
-            style={{width: '200px', marginRight: '40px'}}>
+            style={{width: '200px', alignSelf: "flex-start", margin: "60px 0px 20px"}}>
             <p className="text-header-light">Personal Projects</p>
             <p className="text-body">Post-graduation and self-directed. More coming soon.</p>
             <p className="text-body">12/2022 - present</p>
@@ -111,7 +108,6 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </div>
   )
 }
 
