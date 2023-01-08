@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <div className="dark" id="contact">
       <div style={{
-          padding: '10px',
+          padding: '40px',
           display: "flex",
           justifyContent: "center",
           gap: "2.5rem",}}>
