@@ -45,12 +45,12 @@ const GAProjectList = [
   },
   {
     name: 'potlucky',
-    title: <p className="text-hero link"><span className="text-shino">p</span>otluc<span className="text-shino">k</span>y</p>,
+    title: <p className="text-hero subheader link"><span className="text-shino">p</span>otluc<span className="text-shino">k</span>y</p>,
     description:
       "A platform for event planning and coordination. Guests can RSVP, indicate what they are bringing, and leave comments. Please use login email: amayajlucas@gmail.com password: potlucky1234",
-    skills: ['Javascript', 'React.js', 'CSS3', 'HTML5', 'Styled Components'],
+    skills: 'Javascript, Express, React.js, Node.js, PostgreSQL, CSS3, HTML5',
     url: "https://imfeelingpotlucky.herokuapp.com/",
-    github: "https://github.com/ralicynf/potlucky-front-end",
+    github: "https://github.com/ajluc/potlucky-frontend",
     thumbnail: potlucky
   },
   // {
