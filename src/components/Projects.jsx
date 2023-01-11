@@ -12,7 +12,7 @@ const personalProjectList = [
     name: 'portfolio',
     title: <p className="text-hero subheader link"><span className="text-shino">p</span>o<span className="text-shino">r</span>tfolio</p>,
     description:
-      "You are here! The project is my personal portfolio, and is currently under construction. A simple React App deployed on Heroku with a custom domain name.",
+      "You are here! The project is my personal portfolio, and is currently under construction. A simple React App deployed on Heroku.",
     skills: 'Javascript, React.js, CSS, Styled Components',
     url: "http://www.amaya.works",
     github: "https://github.com/ajluc/amaya-portfolio",
@@ -26,7 +26,7 @@ const GAProjectList = [
     name: 'snake',
     title: <p className="text-hero subheader link"><span className="text-shino">s</span>na<span className="text-shino">k</span>e</p>,
     description:
-      "This project recreates the classic web game called Snake using Vanilla Javascript. It uses JS classes and inheritance for gameplay functionality. Completed in two days, shortly after first learning Javascript. Here, my biggest challenge was learning to incorporate motion over time, rather than solely through user interaction. Includes dark mode, speed options, and current/high score tracking.",
+      "This project recreates the classic web game called Snake using Vanilla Javascript. It uses JS classes and inheritance. Primary gameplay functionality completed in two days, shortly after first learning Javascript. Here, my biggest challenge was learning to incorporate motion over time, rather than solely through user interaction. Includes dark mode, speed options, and current/high score tracking.",
     skills: 'Javascript, React.js, CSS3, HTML5',
     url: "https://_s_n_a_k_e_.surge.sh/",
     github: "https://github.com/ajluc/_s_n_a_k_e_",
