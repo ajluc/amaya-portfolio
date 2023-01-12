@@ -5,6 +5,7 @@ import snake from "../images/thumbnails/snake.png"
 import portfolio from "../images/thumbnails/portfolio.png"
 import facadebook from "../images/thumbnails/facadebook.png"
 import potlucky from "../images/thumbnails/potlucky.png"
+import stooping from "../images/thumbnails/stooping"
 import intdev from "../images/thumbnails/intdev.png"
 
 const personalProjectList = [
@@ -23,25 +24,14 @@ const personalProjectList = [
 
 const GAProjectList = [
   {
-    name: 'snake',
-    title: <p className="text-hero subheader link"><span className="text-shino">s</span>na<span className="text-shino">k</span>e</p>,
+    name: 'stoopcity',
+    title: <p className="text-hero subheader link"><span className="text-shino">StoopCity</span></p>,
     description:
-      "This project recreates the classic web game called Snake using Vanilla Javascript. It uses JS classes and inheritance. Primary gameplay functionality completed in two days, shortly after first learning Javascript. Here, my biggest challenge was learning to incorporate motion over time, rather than solely through user interaction. Includes dark mode, speed options, and current/high score tracking.",
-    skills: 'Javascript, React.js, CSS3, HTML5',
-    url: "https://_s_n_a_k_e_.surge.sh/",
-    github: "https://github.com/ajluc/_s_n_a_k_e_",
-    thumbnail: snake,
-    images: [snake]
-  },
-  {
-    name: 'facadebook',
-    title: <p className="text-hero subheader link">facade<span className="text-shino">b</span>oo<span className="text-shino">k</span></p>,
-    description:
-      "An anonymous, open source architecture blog where contributors can give their unfiltered opinions of the built environment. Facadebook is an interactive social platform to open the dialogue to all fans (and haters) of architecture.",
-    skills: 'Javascript, MongoDB, Express, React.js, Node.js, CSS3, HTML5',
-    url: "https://facadebook.herokuapp.com/",
-    github: "https://github.com/ajluc/facadebook",
-    thumbnail: facadebook
+      "The project provides a map-based platform for users to post free items of their own or seen on the streets of New York City with the goal of limiting our communal waste. Please use login email: amayajlucas@gmail.com password: stoopcity1234",
+    skills: 'Javascript, Python, React.js, Flask, CSS3, HTML5',
+    url: "https://stooping.herokuapp.com/",
+    github: "https://github.com/ajluc/stooping-frontend",
+    thumbnail: stooping
   },
   {
     name: 'potlucky',
@@ -64,6 +54,27 @@ const GAProjectList = [
   //   thumbnail: intdev
 
   // },
+  {
+    name: 'facadebook',
+    title: <p className="text-hero subheader link">facade<span className="text-shino">b</span>oo<span className="text-shino">k</span></p>,
+    description:
+      "An anonymous, open source architecture blog where contributors can give their unfiltered opinions of the built environment. Facadebook is an interactive social platform to open the dialogue to all fans (and haters) of architecture.",
+    skills: 'Javascript, MongoDB, Express, React.js, Node.js, CSS3, HTML5',
+    url: "https://facadebook.herokuapp.com/",
+    github: "https://github.com/ajluc/facadebook",
+    thumbnail: facadebook
+  },
+  {
+    name: 'snake',
+    title: <p className="text-hero subheader link"><span className="text-shino">s</span>na<span className="text-shino">k</span>e</p>,
+    description:
+      "This project recreates the classic web game called Snake using Vanilla Javascript. It uses JS classes and inheritance. Primary gameplay functionality completed in two days, shortly after first learning Javascript. Here, my biggest challenge was learning to incorporate motion over time, rather than solely through user interaction. Includes dark mode, speed options, and current/high score tracking.",
+    skills: 'Javascript, React.js, CSS3, HTML5',
+    url: "https://_s_n_a_k_e_.surge.sh/",
+    github: "https://github.com/ajluc/_s_n_a_k_e_",
+    thumbnail: snake,
+    images: [snake]
+  }
 ]
 
 
