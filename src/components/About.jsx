@@ -1,8 +1,10 @@
 import bioPic from "../images/Amaya-Lucas.png"
+import FadeInSection from "./FadeIn"
 
 const About = () => {
   return (
     <div className="light" id="about">
+      <FadeInSection>
       <div className="container">
         <p className="text-hero fade">a<span className="text-shino">b</span>out</p>
           <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
@@ -33,6 +35,7 @@ const About = () => {
 </p>
           </div>
         </div>
+        </FadeInSection>
       </div>
   )
 }

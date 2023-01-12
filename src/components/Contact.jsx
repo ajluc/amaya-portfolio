@@ -1,10 +1,13 @@
+import FadeInSection from "./FadeIn"
+
 const Contact = () => {
   return (
     <div className="light" id="contact">
+      <FadeInSection>
       <div className="container">
         <p className="text-hero fade" >Let'<span className="text-shino">s</span> Connect</p>
         <div>
-          <p style={{textAlign: "center"}}>Want to work together? Please reach out! I am currently looking for new work opportunities. I will get back to you as soon as possible.</p>
+          <p style={{textAlign: "center"}}>Want to work together? <br/>Please reach out! I am currently looking for new work opportunities. <br/>I will get back to you as soon as possible.</p>
           <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", marginTop: "20px", gap: "10px"}}>
             {/* <p>phone: <span style={{fontWeight: "500"}}>+1 (208) 921-5524</span></p> */}
             <div className="row" style={{width: "250px"}}>
@@ -20,6 +23,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      </FadeInSection>
     </div>
   )
 }

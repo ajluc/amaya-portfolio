@@ -7,6 +7,7 @@ import facadebook from "../images/thumbnails/facadebook.png"
 import potlucky from "../images/thumbnails/potlucky.png"
 import stooping from "../images/thumbnails/stooping.png"
 import intdev from "../images/thumbnails/intdev.png"
+import FadeInSection from "./FadeIn"
 
 const personalProjectList = [
   {
@@ -86,6 +87,7 @@ const Projects = () => {
 
   return (
     <div className="dark" id="projects">
+      <FadeInSection>
       <div className="container">
         <p className="text-hero fade"><span className="text-shino">pr</span>oject<span className="text-shino">s</span></p>
         <div 
@@ -117,6 +119,7 @@ const Projects = () => {
             ))}
           </div>
         </div>
+        </FadeInSection>
       </div>
   )
 }
