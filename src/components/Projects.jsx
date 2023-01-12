@@ -5,7 +5,7 @@ import snake from "../images/thumbnails/snake.png"
 import portfolio from "../images/thumbnails/portfolio.png"
 import facadebook from "../images/thumbnails/facadebook.png"
 import potlucky from "../images/thumbnails/potlucky.png"
-import stooping from "../images/thumbnails/stooping"
+import stooping from "../images/thumbnails/stooping.png"
 import intdev from "../images/thumbnails/intdev.png"
 
 const personalProjectList = [
