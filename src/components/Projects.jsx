@@ -25,7 +25,7 @@ const personalProjectList = [
 const GAProjectList = [
   {
     name: 'stoopcity',
-    title: <p className="text-hero subheader link"><span className="text-shino">StoopCity</span></p>,
+    title: <p className="text-hero subheader link"><span className="text-shino">S</span>too<span className="text-shino">p</span>City</p>,
     description:
       "The project provides a map-based platform for users to post free items of their own or seen on the streets of New York City with the goal of limiting our communal waste. Please use login email: amayajlucas@gmail.com password: stoopcity1234",
     skills: 'Javascript, Python, React.js, Flask, CSS3, HTML5',
