@@ -28,7 +28,7 @@ const GAProjectList = [
     name: 'stoopcity',
     title: <p className="text-hero subheader link"><span className="text-shino">S</span>too<span className="text-shino">p</span>City</p>,
     description:
-      "The project provides a map-based platform for users to post free items of their own or seen on the streets of New York City with the goal of limiting our communal waste. Please use login email: amayajlucas@gmail.com password: stoopcity1234",
+      "The project provides a map-based platform for users to post free items of their own or seen on the streets of New York City with the goal of limiting our communal waste.",
     skills: 'Javascript, Python, React.js, Flask, CSS3, HTML5',
     url: "https://stooping.herokuapp.com/",
     github: "https://github.com/ajluc/stooping-frontend",
@@ -38,7 +38,7 @@ const GAProjectList = [
     name: 'potlucky',
     title: <p className="text-hero subheader link"><span className="text-shino">p</span>otluc<span className="text-shino">k</span>y</p>,
     description:
-      "A platform for event planning and coordination. Guests can RSVP, indicate what they are bringing, and leave comments. Please use login email: amayajlucas@gmail.com password: potlucky1234",
+      "A platform for event planning and coordination. Guests can RSVP, indicate what they are bringing, and leave comments.",
     skills: 'Javascript, Express, React.js, Node.js, PostgreSQL, CSS3, HTML5',
     url: "https://imfeelingpotlucky.herokuapp.com/",
     github: "https://github.com/ajluc/potlucky-frontend",
