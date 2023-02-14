@@ -4,7 +4,7 @@
 
 ---
 
-### Deployed Page: [Potlucky](https://amaya-portfolio.herokuapp.com/)
+### Deployed Page: [Portfolio](https://amaya-portfolio.herokuapp.com/)
 
 ---
 
