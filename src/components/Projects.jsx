@@ -40,7 +40,7 @@ const GAProjectList = [
     description:
       "A platform for event planning and coordination. Guests can RSVP, indicate what they are bringing, and leave comments.",
     skills: 'Javascript, Express, React.js, Node.js, PostgreSQL, CSS3, HTML5',
-    url: "https://imfeelingpotlucky.herokuapp.com/",
+    url: "https://potlucky-b1d55a4c56e4.herokuapp.com/",
     github: "https://github.com/ajluc/potlucky-frontend",
     thumbnail: potlucky
   },
