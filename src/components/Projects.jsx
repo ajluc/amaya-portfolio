@@ -61,7 +61,7 @@ const GAProjectList = [
     description:
       "An anonymous, open source architecture blog where contributors can give their unfiltered opinions of the built environment. Facadebook is an interactive social platform to open the dialogue to all fans (and haters) of architecture.",
     skills: 'Javascript, MongoDB, Express, React.js, Node.js, CSS3, HTML5',
-    url: "https://facadebook.herokuapp.com/",
+    url: "https://facadebook-874f7b890253.herokuapp.com/",
     github: "https://github.com/ajluc/facadebook",
     thumbnail: facadebook
   },
