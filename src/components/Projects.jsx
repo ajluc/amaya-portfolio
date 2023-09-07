@@ -5,7 +5,7 @@ import snake from "../images/thumbnails/snake.png"
 import portfolio from "../images/thumbnails/portfolio.png"
 import facadebook from "../images/thumbnails/facadebook.png"
 import potlucky from "../images/thumbnails/potlucky.png"
-import stooping from "../images/thumbnails/stooping.png"
+// import stooping from "../images/thumbnails/stooping.png"
 // import intdev from "../images/thumbnails/intdev.png"
 import FadeInSection from "./FadeIn"
 
@@ -24,16 +24,16 @@ const personalProjectList = [
 ]
 
 const GAProjectList = [
-  {
-    name: 'stoopcity',
-    title: <p className="text-hero subheader link"><span className="text-shino">S</span>too<span className="text-shino">p</span>City</p>,
-    description:
-      "The project provides a map-based platform for users to post free items of their own or seen on the streets of New York City with the goal of limiting our communal waste.",
-    skills: 'Javascript, Python, React.js, Flask, CSS3, HTML5',
-    url: "https://stooping.herokuapp.com/",
-    github: "https://github.com/ajluc/stooping-frontend",
-    thumbnail: stooping
-  },
+  // {
+  //   name: 'stoopcity',
+  //   title: <p className="text-hero subheader link"><span className="text-shino">S</span>too<span className="text-shino">p</span>City</p>,
+  //   description:
+  //     "The project provides a map-based platform for users to post free items of their own or seen on the streets of New York City with the goal of limiting our communal waste.",
+  //   skills: 'Javascript, Python, React.js, Flask, CSS3, HTML5',
+  //   url: "https://stooping.herokuapp.com/",
+  //   github: "https://github.com/ajluc/stooping-frontend",
+  //   thumbnail: stooping
+  // },
   {
     name: 'potlucky',
     title: <p className="text-hero subheader link"><span className="text-shino">p</span>otluc<span className="text-shino">k</span>y</p>,
