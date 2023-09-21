@@ -9,22 +9,22 @@ const About = () => {
         <p className="text-hero fade">a<span className="text-shino">b</span>out</p>
           <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
             <img src={bioPic} className="bio-pic" style={{marginBottom: "40px"}}/>
-            <div  style={{display: "flex", flexDirection: "row", alignItems: "flex-start", marginBottom: "40px", gap: "20px"}}>
+            <div className="skills">
               <div>
                 <p className="text-header-dark">Languages</p>
-                  <p className="text-body">Javascript, HTML, CSS, Python</p>
+                  <p className="text-body" style={{marginBottom: "10px"}}>Javascript, HTML, CSS, Python</p>
               </div>
               <div>
                 <p className="text-header-dark">Frameworks</p>
-                  <p className="text-body">React.js, Node.js, Express, Flask, Vue.js</p>
+                  <p className="text-body" style={{marginBottom: "10px"}}>React.js, Node.js, Express, Flask, Vue.js</p>
               </div>
               <div>
                 <p className="text-header-dark">Databases</p>
-                  <p className="text-body">SQL, PostgreSQL, SQLAlchemy, MongoDB</p>
+                  <p className="text-body" style={{marginBottom: "10px"}}>SQL, PostgreSQL, SQLAlchemy, MongoDB</p>
               </div>
               <div>
                 <p className="text-header-dark">Methods and Tools</p>
-                  <p className="text-body">Mobile-First, Responsive Design, Wireframing, ERD, CHD</p>
+                  <p className="text-body" style={{marginBottom: "10px"}}>Mobile-First, Responsive Design, Wireframing, ERD, CHD</p>
               </div>
             </div>
             <p>Hey there! I am an upcoming web developer with a passion for learning and a natural curiosity. I am a creative problem solver as well as an analytical thinker.</p>
