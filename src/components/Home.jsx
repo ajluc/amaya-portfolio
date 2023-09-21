@@ -5,7 +5,8 @@ const Home = () => {
         <div>
         <p className="text-hero fade" style={{margin: '0px'}}>amaya luca<span className="text-shino">s</span></p>
         <div 
-            style={{width: '225px', marginRight: '40px'}}>
+            style={{width: '225px', marginRight: '40px'}}
+            >
             <p className="text-header-light"> </p>
             <p className="text-body">I am an architect-turned-software engineer in NYC. I love clean, user-driven design and efficient code.</p>
           </div>
