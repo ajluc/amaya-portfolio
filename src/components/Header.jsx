@@ -26,7 +26,7 @@ const Header = () => {
         <a href="https://docs.google.com/document/d/19lOBGTkaKlRX_nObD-nhCIl4tEmVnHltzR3InHQjZC0/edit?usp=sharing" target='_blank' className="nav-item-link" onClick={detailsClose}>+Resume</a>
       </div>
       <div className="nav-item">
-        <a href="https://drive.google.com/file/d/1Lr3riy5pKNn2bsrwDHENlNzV486CdDEt/view?usp=sharing" target='_blank' className="nav-item-link" onClick={detailsClose}>+Architecture</a>
+        <a href="https://drive.google.com/file/d/1VSM-L9wU4wxMWjqHFuvHO7hq2O0I3bE-/view?usp=sharing" target='_blank' className="nav-item-link" onClick={detailsClose}>+Architecture</a>
       </div>
     </div>
   )
