@@ -1,8 +1,6 @@
-# Personal Portfolio
+![Potlucky](./src/images/Banner.jpeg)
 
 ## Date: 12/23/2022
-
----
 
 ### Deployed Page: [Portfolio](https://amaya-portfolio.herokuapp.com/)
 

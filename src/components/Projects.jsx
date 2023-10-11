@@ -16,7 +16,7 @@ const personalProjectList = [
     description:
       "You are here! The project is my personal portfolio, and is currently under construction. A simple React App deployed on Heroku.",
     skills: 'Javascript, React.js, CSS, Styled Components',
-    url: "http://www.amaya.works",
+    url: "https://www.amaya.works",
     github: "https://github.com/ajluc/amaya-portfolio",
     thumbnail: portfolio,
     images: []
