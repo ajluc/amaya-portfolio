@@ -5,7 +5,7 @@ import snake from "../images/thumbnails/snake.png"
 import portfolio from "../images/thumbnails/portfolio.png"
 import facadebook from "../images/thumbnails/facadebook.png"
 import potlucky from "../images/thumbnails/potlucky.png"
-// import stooping from "../images/thumbnails/stooping.png"
+import stooping from "../images/thumbnails/stooping.png"
 // import intdev from "../images/thumbnails/intdev.png"
 import FadeInSection from "./FadeIn"
 
@@ -98,7 +98,7 @@ const Projects = () => {
           </div>
           <div>
             {GAProjectList.map((project) => (
-              <div className="project-container" onClick={handleClick}>
+              <div key={project.name} className="project-container" onClick={handleClick}>
                 <ProjectCard project={project}/>
                 <FoldOut project={project}/>
               </div>
@@ -112,7 +112,7 @@ const Projects = () => {
           </div>
           <div>
             {personalProjectList.map((project) => (
-              <div className="project-container" onClick={handleClick}>
+              <div key={project.name} className="project-container" onClick={handleClick}>
                 <ProjectCard project={project}/>
                 <FoldOut project={project}/>
               </div>
