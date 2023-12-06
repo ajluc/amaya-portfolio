@@ -6,10 +6,21 @@ import portfolio from "../images/thumbnails/portfolio.png"
 import facadebook from "../images/thumbnails/facadebook.png"
 import potlucky from "../images/thumbnails/potlucky.png"
 import stooping from "../images/thumbnails/stooping.png"
+import affordwell from "../images/thumbnails/AfforDWELL.png"
 // import intdev from "../images/thumbnails/intdev.png"
 import FadeInSection from "./FadeIn"
 
 const personalProjectList = [
+  {
+    name: 'affordwell',
+    title: <p className="text-hero subheader link">affo<span className="text-shino">r</span>dwell</p>,
+    description:
+      `AfforDWELL is a hub for New Yorkers to inform themselves on the city’s stabilized rental market. Grand prize winner of the Civic Tech Hackathon from LibertyDAO. Data provided by the city of New York on affordable housing options has been processed and mapped for higher access to low-income residents. Under development.`,
+    skills: 'React.js, Python, Bootstrap, Data Analysis',
+    url: "https://affordwellnyc.com/",
+    github: "https://github.com/ajluc/AfforDWELL",
+    thumbnail: affordwell,
+  },
   {
     name: 'portfolio',
     title: <p className="text-hero subheader link"><span className="text-shino">p</span>o<span className="text-shino">r</span>tfolio</p>,
@@ -19,7 +30,6 @@ const personalProjectList = [
     url: "https://www.amaya.works",
     github: "https://github.com/ajluc/amaya-portfolio",
     thumbnail: portfolio,
-    images: []
   }
 ]
 
@@ -91,33 +101,33 @@ const Projects = () => {
       <div className="container">
         <p className="text-hero fade"><span className="text-shino">pr</span>oject<span className="text-shino">s</span></p>
         <div 
-            style={{width: '200px', alignSelf: "flex-start", margin: "40px 0px 20px"}}>
-            <p className="text-header-light">General Assembly</p>
-            <p className="text-body">Twelve-week intensive in Full-Stack Web Development. </p>
-            <p className="text-body">9/2022 - 12/2022</p>
-          </div>
-          <div>
-            {GAProjectList.map((project) => (
-              <div key={project.name} className="project-container" onClick={handleClick}>
-                <ProjectCard project={project}/>
-                <FoldOut project={project}/>
-              </div>
-            ))}
-          </div>
-          <div 
-            style={{width: '200px', alignSelf: "flex-start", margin: "60px 0px 20px"}}>
-            <p className="text-header-light">Personal Projects</p>
-            <p className="text-body">Post-graduation and self-directed. More coming soon.</p>
-            <p className="text-body">12/2022 - present</p>
-          </div>
-          <div>
-            {personalProjectList.map((project) => (
-              <div key={project.name} className="project-container" onClick={handleClick}>
-                <ProjectCard project={project}/>
-                <FoldOut project={project}/>
-              </div>
-            ))}
-          </div>
+          style={{width: '200px', alignSelf: "flex-start", margin: "40px 0px 20px"}}>
+          <p className="text-header-light">Personal Projects</p>
+          <p className="text-body">Post-graduation and self-directed. More coming soon.</p>
+          <p className="text-body">12/2022 - present</p>
+        </div>
+        <div>
+          {personalProjectList.map((project) => (
+            <div key={project.name} className="project-container" onClick={handleClick}>
+              <ProjectCard project={project}/>
+              <FoldOut project={project}/>
+            </div>
+          ))}
+        </div>
+        <div 
+          style={{width: '200px', alignSelf: "flex-start", margin: "60px 0px 20px"}}>
+          <p className="text-header-light">General Assembly</p>
+          <p className="text-body">Twelve-week intensive in Full-Stack Web Development. </p>
+          <p className="text-body">9/2022 - 12/2022</p>
+        </div>
+        <div>
+          {GAProjectList.map((project) => (
+            <div key={project.name} className="project-container" onClick={handleClick}>
+              <ProjectCard project={project}/>
+              <FoldOut project={project}/>
+            </div>
+          ))}
+        </div>
         </div>
         </FadeInSection>
       </div>
